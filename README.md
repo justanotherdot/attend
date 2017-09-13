@@ -2,3 +2,4 @@
 
 # attend
 
+A simple, static server
