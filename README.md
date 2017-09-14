@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/justanotherdot/attend.svg?branch=master)](https://travis-ci.org/justanotherdot/attend)
+
 # [attend][]
 
 Thanks for starting a project with Haskeleton! If you haven't heard of it
