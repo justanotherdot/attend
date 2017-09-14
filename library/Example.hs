@@ -2,10 +2,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE TypeOperators     #-}
 
-module Lib
-    ( startApp
-    , app
-    ) where
+module Example (startApp) where
 
 import           Network.HTTP.Types.Status      (status404)
 import           Network.Wai                    (responseFile)

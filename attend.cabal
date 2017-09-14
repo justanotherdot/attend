@@ -1,0 +1,77 @@
+-- This file has been generated from package.yaml by hpack version 0.17.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           attend
+version:        0.0.0
+synopsis:       A new Haskeleton package.
+description:    attend is a new Haskeleton package.
+category:       Other
+homepage:       https://github.com/justanotherdot/attend#readme
+bug-reports:    https://github.com/justanotherdot/attend/issues
+maintainer:     Ryan James Spencer <spencer.ryanjames@gmail.com>
+license:        MIT
+build-type:     Simple
+cabal-version:  >= 1.10
+
+extra-source-files:
+    CHANGELOG.md
+    LICENSE.md
+    package.yaml
+    README.md
+    stack.yaml
+
+source-repository head
+  type: git
+  location: https://github.com/justanotherdot/attend
+
+library
+  hs-source-dirs:
+      library
+  ghc-options: -Wall
+  build-depends:
+      base
+    , servant-server
+    , wai
+    , wai-app-static
+    , warp
+    , warp-tls
+    , http-types
+  exposed-modules:
+      Example
+  default-language: Haskell2010
+
+executable attend
+  main-is: Main.hs
+  hs-source-dirs:
+      executable
+  ghc-options: -Wall -rtsopts -threaded -with-rtsopts=-N
+  build-depends:
+      base
+    , attend
+  default-language: Haskell2010
+
+test-suite attend-test-suite
+  type: exitcode-stdio-1.0
+  main-is: Main.hs
+  hs-source-dirs:
+      test-suite
+  ghc-options: -Wall -rtsopts -threaded -with-rtsopts=-N
+  build-depends:
+      base
+    , attend
+    , tasty
+    , tasty-hspec
+  default-language: Haskell2010
+
+benchmark attend-benchmarks
+  type: exitcode-stdio-1.0
+  main-is: Main.hs
+  hs-source-dirs:
+      benchmark
+  ghc-options: -Wall -rtsopts -threaded -with-rtsopts=-N
+  build-depends:
+      base
+    , attend
+    , criterion
+  default-language: Haskell2010

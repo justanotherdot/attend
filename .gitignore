@@ -1,27 +1,4 @@
-dist
-dist-*
-cabal-dev
-*.o
-*.hi
-*.chi
-*.chs.h
-*.dyn_o
-*.dyn_hi
-.hpc
-.hsenv
-.cabal-sandbox/
-cabal.sandbox.config
-*.prof
-*.aux
-*.hp
-*.eventlog
-.stack-work/
-cabal.project.local
-spa/bower_components/
-spa/node_modules/
-spa/.pulp-cache/
-spa/output/
-spa/generated-docs/
-spa/.psc*
-spa/.purs*
-spa/.psa*
+# Stack uses this directory as scratch space.
+/.stack-work/
+# Stack generates the Cabal file from `package.yaml` through hpack.
+/*.cabal
